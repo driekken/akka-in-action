@@ -7,6 +7,16 @@ resolvers ++= Seq("Typesafe Repository" at "http://repo.typesafe.com/typesafe/re
                   "Spray Repository"    at "http://repo.spray.io",
                   "Spray Nightlies"     at "http://nightlies.spray.io/")
 
+libraryDependencies ++= {
+  val akkaVersion       = "2.3.4"
+  Seq(
+    "com.typesafe.akka"       %%  "akka-actor"                     % akkaVersion,
+    "com.typesafe.akka"       %%  "akka-slf4j"                     % akkaVersion,
+    "com.typesafe.akka"       %%  "akka-testkit"                   % akkaVersion   % "test",
+    "org.scalatest"           %% "scalatest"                       % "2.2.0"       % "test"
+  )
+}
+
 lazy val chapter2=project
 
 lazy val goticks=project in file("chapter6")
