@@ -1,7 +1,7 @@
 import AssemblyKeys._
 import com.typesafe.sbt.SbtStartScript
 
-name := "goticks"
+name := "chapter2"
 
 version := "0.1-SNAPSHOT"
 
