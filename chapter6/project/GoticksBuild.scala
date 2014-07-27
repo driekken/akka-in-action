@@ -10,7 +10,7 @@ object GoTicksBuild extends Build {
   )
 
   lazy val goticks = Project(
-    id = "goticks",
+    id = "chapter6",
     base = file("."),
     settings = buildSettings ++ Project.defaultSettings
   ) configs(MultiJvm)

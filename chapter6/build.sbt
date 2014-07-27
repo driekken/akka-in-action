@@ -3,7 +3,7 @@ import com.typesafe.sbt.SbtStartScript
 
 seq(SbtStartScript.startScriptForClassesSettings: _*)
 
-name := "goticks"
+name := "chapter6"
 
 version := "0.1-SNAPSHOT"
 
